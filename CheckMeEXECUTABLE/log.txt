@@ -1,0 +1,3 @@
+The user bmartos with ID 1 has logged in on 2023-06-01 21:59:43
+The user acepeda with ID 2 has logged in on 2023-06-01 21:59:54
+User 2 created a task with ID 4 on 2023-06-01 22:00:18
