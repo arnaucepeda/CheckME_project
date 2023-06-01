@@ -35,3 +35,4 @@ The user bmartos with ID 1 has logged in on 2023-06-01 21:21:05
 The user bmartos with ID 1 has logged in on 2023-06-01 21:21:41
 The user bmartos with ID 1 has logged in on 2023-06-01 21:22:47
 User 1 created a task with ID 41 on 2023-06-01 21:23:10
+The user bmartos3 with ID 6 has logged in on 2023-06-01 21:27:51

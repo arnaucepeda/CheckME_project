@@ -8,7 +8,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Alert.AlertType;
-import javafx.scene.image.Image;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -128,22 +127,20 @@ public class SignInViewController {
 		}
 
 		try {
+			// Get the Stage of the current window
+			Main.primaryStage = (Stage) enterButton.getScene().getWindow();
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("ViewLogin.fxml"));
+
+			// Load the ViewTasks.fxml view
+
 			Parent root = loader.load();
 
-			Scene scene = new Scene(root);
-			Stage stage = new Stage();
-			stage.setScene(scene);
-			stage.show();
-
-			Main.primaryStage = (Stage) goBack.getScene().getWindow();
-			Main.primaryStage.close();
-
-			Stage currentStage = (Stage) goBack.getScene().getWindow();
-			currentStage.close();
-		} catch (Exception e) {
+			Main.primaryStage.setScene(new Scene(root));
+			Main.primaryStage.show();
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
+
 	}
 
 	private boolean userExists(String username) {
