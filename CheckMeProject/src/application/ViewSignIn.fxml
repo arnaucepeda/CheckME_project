@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="785.0" style="-fx-background-color: #30373e;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SignInViewController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="785.0" style="-fx-background-color: #30373e;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SignInViewController">
    <children>
       <VBox prefHeight="530.0" prefWidth="376.0" style="-fx-background-color: #ffd08a;">
          <children>
@@ -91,7 +91,7 @@
       </VBox>
       <ImageView fitHeight="315.0" fitWidth="302.0" layoutX="434.0" layoutY="120.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../Asignaturas/Programació/Projecte/Imatges/logoCheckME.png" />
+            <Image url="@../resources/logoCheckME.png" />
          </image>
       </ImageView>
    </children>
