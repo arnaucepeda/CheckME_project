@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Alert?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="785.0" style="-fx-background-color: #30373e;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginViewController">
+   <children>
+      <VBox prefHeight="530.0" prefWidth="376.0" style="-fx-background-color: #ffd08a;">
+         <children>
+            <Label alignment="CENTER" prefHeight="49.0" prefWidth="376.0" text="Login" textOverrun="CLIP">
+               <font>
+                  <Font size="40.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="80.0" />
+               </VBox.margin>
+            </Label>
+            <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #ffd08a;">
+               <children>
+                  <Label text="User" wrapText="true">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="textFieldUsername">
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="8.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label contentDisplay="RIGHT" text="Password" textAlignment="CENTER">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <PasswordField fx:id="passwordFieldPassword">
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="8.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <Button fx:id="enterButton" onAction="#enterButtonClicked" alignment="CENTER" contentDisplay="BOTTOM" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Enter">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="signInButton" mnemonicParsing="false" onAction="#signInButtonClicked" text="Sign In">
+                     <VBox.margin>
+                        <Insets left="120.0" top="80.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="30.0" right="30.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets top="50.0" />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+      <ImageView fitHeight="315.0" fitWidth="302.0" layoutX="434.0" layoutY="120.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Asignaturas/Programació/Projecte/Imatges/logoCheckME.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

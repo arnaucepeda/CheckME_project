@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="785.0" style="-fx-background-color: #ffd08a;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CreateTaskViewController">
+   <children>
+      <Pane layoutX="64.0" layoutY="107.0" prefHeight="392.0" prefWidth="657.0" style="-fx-background-color: white; -fx-border-color: black;">
+         <children>
+            <Label layoutX="55.0" layoutY="51.0" text="Name">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameTextField" layoutX="55.0" layoutY="76.0" />
+            <Label layoutX="55.0" layoutY="142.0" text="Description">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="createButton" onAction="#createButtonClicked" layoutX="586.0" layoutY="353.0" mnemonicParsing="false" text="Create">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Button>
+            <Label layoutX="413.0" layoutY="51.0" text="Limit Date">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="limitDateDatePicker" layoutX="413.0" layoutY="76.0" />
+            <TextArea fx:id="descriptionTextField" layoutX="55.0" layoutY="172.0" prefHeight="161.0" prefWidth="543.0" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="81.0" fitWidth="101.0" layoutX="686.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Asignaturas/Programació/Projecte/Imatges/logoCheckME.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="taskMenu" layoutX="309.0" layoutY="2.0" mnemonicParsing="false" onAction="#openViewTasks" prefHeight="25.0" prefWidth="77.0" text="Tasks" />
+      <Button layoutX="393.0" layoutY="2.0" mnemonicParsing="false" text="Create Task" />
+   </children>
+</Pane>
