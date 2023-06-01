@@ -4,7 +4,6 @@ import java.time.LocalDate;
 import java.time.Period;
 /**
  * @author Blas Martos Ortega - Arnau Cepeda Vivas
- * @date 1/06/2023
  * @version 1.0
  *
  */

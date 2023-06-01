@@ -12,7 +12,6 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 /**
  * @author Blas Martos Ortega - Arnau Cepeda Vivas
- * @date 1/06/2023
  * @version 1.0
  *
  */

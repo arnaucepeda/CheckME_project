@@ -26,7 +26,6 @@ import javafx.stage.Stage;
  * It also provides functionality to write logs and navigate to the tasks view.
  * 
  * @author Blas Martos Ortega - Arnau Cepeda Vivas
- * @date 1/06/2023
  * @version 1.0
  */
 public class CreateTaskViewController {

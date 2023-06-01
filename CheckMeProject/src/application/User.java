@@ -1,7 +1,6 @@
 package application;
 /**
  * @author Blas Martos Ortega - Arnau Cepeda Vivas
- * @date 1/06/2023
  * @version 1.0
  *
  */

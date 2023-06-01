@@ -26,7 +26,6 @@ import java.time.format.DateTimeFormatter;
  * The LoginViewController class controls the behavior of the login view.
  * 
  * @author Blas Martos Ortega - Arnau Cepeda Vivas
- * @date 1/06/2023
  * @version 1.0
  *
  */
@@ -75,23 +74,20 @@ public class LoginViewController {
             }
 
             // Load the ViewTasks view from the FXML file
-            try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("ViewTasks.fxml"));
-                Parent root = loader.load();
+           	try {
+    			// Get the Stage of the current window
+    			Main.primaryStage = (Stage) signInButton.getScene().getWindow();
+    			FXMLLoader loader = new FXMLLoader(getClass().getResource("ViewTasks.fxml"));
 
-                // Create a new scene
-                Scene scene = new Scene(root);
+    			// Load the ViewTasks.fxml view
 
-                // Get the reference of the current window and close it
-                Main.primaryStage = (Stage) enterButton.getScene().getWindow();
-                Main.primaryStage.close();
+    			Parent root = loader.load();
 
-                // Create a new stage and show the scene
-                Main.primaryStage.setScene(scene);
-                Main.primaryStage.show();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+    			Main.primaryStage.setScene(new Scene(root));
+    			Main.primaryStage.show();
+    		} catch (IOException e) {
+    			e.printStackTrace();
+    		}
         } else {
             // Show an error message to the user
             Alert alert = new Alert(Alert.AlertType.ERROR);
@@ -110,23 +106,21 @@ public class LoginViewController {
      */
     @FXML
     private void signInButtonClicked(ActionEvent event) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("ViewSignIn.fxml"));
-            Parent root = loader.load();
+    	try {
+			// Get the Stage of the current window
+			Main.primaryStage = (Stage) signInButton.getScene().getWindow();
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("ViewSignIn.fxml"));
 
-            Scene scene = new Scene(root);
-            Stage stage = new Stage();
-            stage.setScene(scene);
-            stage.show();
+			// Load the ViewTasks.fxml view
 
-            Main.primaryStage = (Stage) signInButton.getScene().getWindow();
-            Main.primaryStage.close();
+			Parent root = loader.load();
 
-            Stage currentStage = (Stage) signInButton.getScene().getWindow();
-            currentStage.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+			Main.primaryStage.setScene(new Scene(root));
+			Main.primaryStage.show();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
     }
 
     private static int userId;

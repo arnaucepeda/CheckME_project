@@ -29,7 +29,6 @@ import java.sql.SQLException;
  * It handles displaying and managing the tasks for a user.
  * 
  * @author Blas Martos Ortega - Arnau Cepeda Vivas
- * @date 1/06/2023
  * @version 1.0
  */
 public class TasksViewController {
